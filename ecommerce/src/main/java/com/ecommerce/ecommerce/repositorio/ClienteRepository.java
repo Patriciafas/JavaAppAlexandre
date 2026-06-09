@@ -16,3 +16,6 @@ import java.util.UUID;
 public interface ClienteRepository extends JpaRepository<Cliente, UUID>{
 
 }
+// JpaRepositoryinterface do Spring Data JPA que fornece operações prontas como SAVE, REMOVE, UP e etc
+//  para acessar e manipular dados no banco de dados, sem precisar escrever a maior parte das consultas
+//  SQL manualmente.*//

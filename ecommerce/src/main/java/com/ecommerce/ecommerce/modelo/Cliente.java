@@ -19,15 +19,15 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
+@Entity //vai ser uma tabela
 @Table(name = "tb_clientes")
 public class Cliente {
 
-    @Id
+    @Id //tabela sera id na tabela
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(nullable = false)
+    @Column(nullable = false) //Banco não vai aceitar valores nulos
     private String nome;
 
     @Column(nullable = false)

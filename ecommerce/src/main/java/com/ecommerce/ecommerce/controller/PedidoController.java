@@ -26,7 +26,8 @@ public class PedidoController {
 
     public PedidoController(CheckoutMarketplaceService checkoutService, 
                             ClienteRepository clienteRepository, 
-                            PedidoRepository pedidoRepository) {
+                            PedidoRepository pedidoRepository) // construtor para receber as classes abaixo
+    {
         this.checkoutService = checkoutService;
         this.clienteRepository = clienteRepository;
         this.pedidoRepository = pedidoRepository;

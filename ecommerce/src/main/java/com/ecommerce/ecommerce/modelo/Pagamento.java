@@ -14,7 +14,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
 
-@Entity
+@Entity //Marca a "identidade" da Table como pagamentos  
 @Table(name = "tb_pagamentos")
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "tipo_pagamento")
@@ -24,7 +24,7 @@ public abstract class Pagamento {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @OneToOne(optional = false)
+    @OneToOne(optional = false) //OneToO = Um para um 
     @JoinColumn(name = "pedido_id")
     private Pedido pedido;
 
